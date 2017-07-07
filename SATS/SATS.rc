@@ -1,0 +1,390 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SATS.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SATS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 451, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SATS"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "SATS Version 1.0  2006.10",IDC_STATIC,6,51,228,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006  ~ 2007   BDCS",IDC_STATIC,6,26,119,8
+    DEFPUSHBUTTON   "确定",IDOK,394,233,50,16,WS_GROUP
+    LTEXT           "Software Developer ：Norman",IDC_STATIC,6,14,96,8
+    LTEXT           "SATS Version 1.1 2006.12.30",IDC_STATIC,6,61,230,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.2 change ac  rate increase to 3.6 time 2007.01.11",IDC_STATIC,6,71,234,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.3  Fix F9 ,load code seq cfg 2007.01.16",IDC_STATIC,6,81,232,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.4 Position set start should not less than startpoint;Active dm selection  2007.01.31",IDC_STATIC,6,91,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.5 Add Sats inport port  2007.02.06",IDC_STATIC,6,101,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.6 Add Sats ESI function,Add Stop at certain point function 2007.02.07",IDC_STATIC,6,111,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.7 Add read negative position function (-x=10000000+x) 2007.02.09",IDC_STATIC,6,121,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.8 Add log file function  2007.02.09",IDC_STATIC,6,131,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 1.9 Add Car&Mod Tc output at same time; Run backward;TIR record;sw version cross check  2007.02.27",IDC_STATIC,6,141,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 2.0 ATP Finsihed 2007.08.12",IDC_STATIC,6,151,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 3.0 Add ATO Function 2007.11.22",IDC_STATIC,6,161,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 3.1 Modify ato enable bit;ato loop positon accuracy to CM; Ato loop dir with color. 2007.12.05",IDC_STATIC,6,171,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 3.2 handle startpos less than endpos (requirement: all the pos in ini file shoule be * -1);Show ato acc. 2007.12.12",IDC_STATIC,6,181,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 3.3 mend ato enable message bit position; ato acc div 100. 2008.01.17",IDC_STATIC,6,191,438,8,SS_NOPREFIX
+    LTEXT           "SATS Version 4.0 add train delay and ato coe simulation function. 2008.03.20",IDC_STATIC,6,201,438,8,SS_NOPREFIX
+END
+
+IDD_SATS_DIALOG DIALOGEX 0, 0, 553, 391
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "静态自动列车测试系统-SATS"
+MENU IDR_MENU_MAIN
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "速度/里程",IDC_STATIC,7,109,190,56
+    GROUPBOX        "控制面板：",IDC_STATIC,200,7,120,158
+    CONTROL         "",IDC_SLIDER_ACC,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,213,33,22,129,WS_EX_CLIENTEDGE
+    LTEXT           "速度(KM/H)：",IDC_STATIC,14,127,44,8
+    LTEXT           "加速度",IDC_STATIC,210,21,21,8
+    EDITTEXT        IDC_EDIT_SPEED,65,125,21,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DISTANCE,154,141,38,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "站场：",IDC_STATIC,7,171,537,112
+    LISTBOX         IDC_LIST_MSG,9,297,268,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "消息1：",IDC_STATIC,7,288,273,87
+    LISTBOX         IDC_LIST2,284,297,258,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "消息2：",IDC_STATIC,282,288,262,87
+    LTEXT           "加速度(M/S.S)：",IDC_STATIC,13,145,52,8
+    EDITTEXT        IDC_EDIT_ACC,65,142,21,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "轮径选择：",IDC_STATIC,241,73,35,8
+    LTEXT           "总里程(M)：",IDC_STATIC,115,144,39,8
+    COMBOBOX        IDC_COMBO_DM,279,69,38,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIR,278,33,38,59,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "测速方向:",IDC_STATIC,241,35,32,8
+    GROUPBOX        "模拟：",IDC_STATIC,323,7,118,158
+    COMBOBOX        IDC_COMBO_CAR,367,51,39,144,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轨道载频:",IDC_STATIC,330,53,33,8
+    COMBOBOX        IDC_COMBO_MOD,367,66,39,154,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轨道调频:",IDC_STATIC,330,69,34,8
+    LTEXT           "码间隙:",IDC_STATIC,330,113,29,8
+    PUSHBUTTON      "Send",IDC_BTN_GAP,409,109,28,14,0,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO_SIMDIR,367,34,39,144,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "起始位置:",IDC_STATIC,330,130,37,8
+    GROUPBOX        " 配置：",IDC_STATIC,444,7,100,158
+    EDITTEXT        IDC_EDIT_POSITION,154,125,38,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "位置(M)：",IDC_STATIC,119,128,32,8
+    EDITTEXT        IDC_EDIT_START_POS,367,127,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GAP,367,109,39,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BTN_POSSET,409,127,28,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "行驶方向:",IDC_STATIC,330,36,33,8
+    CONTROL         "模拟行车(内部调试)",IDC_CHECK_SIMRUN,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,240,119,77,10
+    PUSHBUTTON      "SetZeroSpeed",IDC_BTN_SET_ZERO_SPEED,240,131,60,14,NOT WS_VISIBLE | WS_DISABLED,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_AUTO_SPEED,367,91,38,14,ES_AUTOHSCROLL
+    LTEXT           "自动定速：",IDC_STATIC,329,93,37,8
+    PUSHBUTTON      "ASpeed",IDC_BTN_AUTO_SPEED,409,91,28,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "禁止轨道码输出",IDC_CHECK_NOTRACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,149,64,10
+    COMBOBOX        IDC_COMBO_CFG,474,19,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "码序：",IDC_STATIC,448,21,21,8
+    GROUPBOX        "状态：",IDC_STATIC,7,7,189,93
+    LTEXT           "ESI：",IDC_STATIC,449,40,18,8
+    COMBOBOX        IDC_COMBO_ESI,474,37,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "空",IDC_STATIC,203,94,8,8
+    EDITTEXT        IDC_EDIT_PORT,35,83,46,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "端口:",IDC_STATIC,15,85,17,8
+    LTEXT           "",IDC_STATIC_USER,9,378,55,8
+    LTEXT           "定点停车:",IDC_STATIC,330,146,37,8
+    EDITTEXT        IDC_EDIT_STOP_POS,367,145,39,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Stop",IDC_BTN_STOP,409,145,28,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "OutTC",IDC_BTN_OUTTC,407,56,31,14,0,WS_EX_DLGMODALFRAME
+    LTEXT           "APR：",IDC_STATIC,449,59,20,8
+    COMBOBOX        IDC_COMBO_APR,475,56,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "VERSION:",IDC_STATIC,14,20,31,8
+    EDITTEXT        IDC_EDIT_VER,47,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_HEADDIR,278,51,38,30,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "车头位置:",IDC_STATIC,241,53,32,8
+    COMBOBOX        IDC_COMBO_DRVDIR,367,20,39,59,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "手柄方向:",IDC_STATIC,330,22,32,8
+    PUSHBUTTON      "OutDir",IDC_BTN_OUTDIR,407,26,31,14,0,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT_SPEED_ATO,91,125,21,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ACC_ATO,91,142,21,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Set ATO Mode",IDC_CHECK_ATO_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,90,63,10
+    EDITTEXT        IDC_EDIT_ATO_ACC,170,83,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SATS_ACC,147,83,22,14,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LIST_VALUE,451,89,86,52,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Core Value:",IDC_STATIC,451,76,37,8
+    EDITTEXT        IDC_EDIT_ATOCOE,485,149,41,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ATO COE:",IDC_STATIC,451,151,32,8
+    CONTROL         "FR",IDC_CHECK_FR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,47,23,10
+    CONTROL         "MAR",IDC_CHECK_MAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,59,24,10
+    CONTROL         "TIR",IDC_CHECK_TIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,47,21,10
+    CHECKBOX        "ESI",IDC_CHECK_ESI,14,59,22,10
+END
+
+IDD_DIALOG_PWD DIALOGEX 0, 0, 244, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户确认"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,187,7,50,14
+    LTEXT           "确认信息:",IDC_STATIC,8,7,36,8
+    EDITTEXT        IDC_EDIT_PWD,48,5,124,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SATS.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "SATS.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_SATS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "用户确认",                        ID_MENU_USER
+    END
+    MENUITEM "配置(&G)",                      ID_32825
+    POPUP "内部调试"
+    BEGIN
+        MENUITEM "ESI 测试",                      ID_MENU_ESITEST
+        MENUITEM "模拟行车",                        ID_MENU_SIMRUN
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SAST(&A)...",              57664
+        MENUITEM "帮助(&H)",                      ID_HELP
+    END
+END
+
+IDR_MENU_APR MENU 
+BEGIN
+    POPUP "APR"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "模拟故障",                        ID_APR_MISSING
+    END
+END
+
+IDR_MENU_TRACK MENU 
+BEGIN
+    POPUP "TRACK"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        POPUP "设置载频"
+        BEGIN
+            MENUITEM "默认",                          ID_TRACK_F8
+            MENUITEM "F1",                          ID_TRACK_F1
+            MENUITEM "F2",                          ID_TRACK_F2
+            MENUITEM "F3",                          ID_TRACK_F3
+            MENUITEM "F4",                          ID_TRACK_F4
+            MENUITEM "F5",                          ID_TRACK_F5
+            MENUITEM "F6",                          ID_TRACK_F6
+            MENUITEM "F7",                          ID_TRACK_F7
+            MENUITEM "F9",                          ID_TRACK_F9
+            MENUITEM "DEL",                         ID_TRACK_DEL
+        END
+        POPUP "设置调频"
+        BEGIN
+            MENUITEM "默认",                          ID_TRACK_M0
+            MENUITEM "M01-28-44N",                  ID_TRACK_M1
+            MENUITEM "M02-32-33N",                  ID_TRACK_M2
+            MENUITEM "M03-36-33S",                  ID_TRACK_M3
+            MENUITEM "M04-40-22N",                  ID_TRACK_M4
+            MENUITEM "M05-44-22R1",                 ID_TRACK_M5
+            MENUITEM "M06-48-21R2",                 ID_TRACK_M6
+            MENUITEM "M07-52-21N",                  ID_TRACK_M7
+            MENUITEM "M08-56-22NS",                 ID_TRACK_M8
+            MENUITEM "M09-60-11NS",                 ID_TRACK_M9
+            MENUITEM "M10-64-10R1",                 ID_TRACK_M10
+            MENUITEM "M11-68-10N",                  ID_TRACK_M11
+            MENUITEM "M12-72-11AS",                 ID_TRACK_M12
+            MENUITEM "M13-76-11N",                  ID_TRACK_M13
+            MENUITEM "M14-80-00N",                  ID_TRACK_M14
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "res\\HandCursor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SATS(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SATS.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

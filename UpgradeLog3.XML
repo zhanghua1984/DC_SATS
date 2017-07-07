@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SATS">
+</Property><Property Name="解决方案文件" Value="E:\SATS(20080325)\SATS.sln">
+</Property><Property Name="Date" Value="2013年9月17日">
+</Property><Property Name="Time" Value="9:08">
+</Property><Property Name="日志号" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="SATS" Source="SATS\SATS.vcproj" Description="Converting project file 'E:\SATS(20080325)\SATS\SATS.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SATS" Source="SATS\SATS.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="SATS" Source="SATS\SATS.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="SATS" Source="SATS\SATS.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="SATS" Source="SATS\SATS.vcproj" Description="MSB8012: $(TargetPath) ('E:\SATS(20080325)\SATS\Debug\SATS.exe') does not match the Linker's OutputFile property value 'Debug\SATS.exe' ('E:\SATS(20080325)\Debug\SATS.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="SATS" Source="SATS\SATS.vcproj" Description="MSB8012: $(TargetPath) ('E:\SATS(20080325)\SATS\Release\SATS.exe') does not match the Linker's OutputFile property value 'Release\SATS.exe' ('E:\SATS(20080325)\Release\SATS.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="SATS" Source="SATS\SATS.vcproj" Description="Done converting to new project file 'E:\SATS(20080325)\SATS\SATS.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SATS" Source="SATS\SATS.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SATS.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="SATS.sln" Description="Converted">
+</Event></UpgradeLog>
